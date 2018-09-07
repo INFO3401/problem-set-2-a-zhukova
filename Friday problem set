@@ -1,0 +1,51 @@
+Friday problem set
+
+1. cd ~ = changes current directory to home directory
+
+mkdir ./problem_set_1 = makes a directory called problem_set_1 in the current directory that you're in 
+
+touch submission.txt = creates a blank text file named submission.txt
+
+cd .. = changes directory to the parent of the current directory that you're in
+
+pwd = prints working directory
+
+
+2. cp config.txt / =  copies config.txt to root from home
+
+cd / = changes working directory to root
+
+mkdir preferences = makes a directory(folder) called preferences in the current (root) directory
+
+cd /preferences = changes directory to preferences directory in root
+
+cp ~/preferences/prefs.txt /preferences = copies prefs.txt from a matching directory called preferences in my home directory
+
+head /preferences/prefs.txt
+tail /preferences/prefs.txt
+head ~/preferences/config.txt
+tail ~/preferences/config.txt
+
+Should compare the first and last 10 lines of these two files. 
+
+
+3. Why do you think it is important to have the following shortcuts for navigating the file structure?
+
+A. Root because it's the top-most level of the file structure from which you can navigate down the rest of the tree
+
+B. Home because, again, it's at the top of the file structure after root, which allows you to navigate to any files below it.
+
+C. Parent because you might need to navigate to the parent of a given directory to see where you are in the tree.
+
+
+4. Assume all of the directories below are valid directories (e.g., they exist and we have access to them). What would the following print out? 
+
+cd /usrs/INFO3401/../homework/./problem1
+pwd
+
+This would print out /problem1
+
+
+5. You have accidentally moved a file (~/Documents/datafile.csv) to your current directory rather than copying it. What command did you use to do that? What command should you have used to do that? What command might you use to undo it? 
+
+You would have used the mv command to move the file. To copy the file, you should have used the cp command. To undo it, you could just move the file back to its original location using the mv command. 
